@@ -1,0 +1,15 @@
+/Users/kukuLife/Documents/workspace-spring-tool-suite-4-4.5.1.RELEASE/jJobPlatForm/src/main/java/com/jobplatform/user/mapper/UserMapper.java
+/Users/kukuLife/Documents/workspace-spring-tool-suite-4-4.5.1.RELEASE/jJobPlatForm/src/main/java/com/jobplatform/task/entity/Task.java
+/Users/kukuLife/Documents/workspace-spring-tool-suite-4-4.5.1.RELEASE/jJobPlatForm/src/main/java/com/jobplatform/JobPlatformApplication.java
+/Users/kukuLife/Documents/workspace-spring-tool-suite-4-4.5.1.RELEASE/jJobPlatForm/src/main/java/com/jobplatform/user/entity/User.java
+/Users/kukuLife/Documents/workspace-spring-tool-suite-4-4.5.1.RELEASE/jJobPlatForm/src/main/java/com/jobplatform/task/service/TaskService.java
+/Users/kukuLife/Documents/workspace-spring-tool-suite-4-4.5.1.RELEASE/jJobPlatForm/src/main/java/com/jobplatform/user/controller/UserController.java
+/Users/kukuLife/Documents/workspace-spring-tool-suite-4-4.5.1.RELEASE/jJobPlatForm/src/main/java/com/jobplatform/project/controller/ProjectController.java
+/Users/kukuLife/Documents/workspace-spring-tool-suite-4-4.5.1.RELEASE/jJobPlatForm/src/main/java/com/jobplatform/task/controller/TaskProcessController.java
+/Users/kukuLife/Documents/workspace-spring-tool-suite-4-4.5.1.RELEASE/jJobPlatForm/src/main/java/com/jobplatform/user/service/UserService.java
+/Users/kukuLife/Documents/workspace-spring-tool-suite-4-4.5.1.RELEASE/jJobPlatForm/src/main/java/com/jobplatform/task/mapper/TaskMapper.java
+/Users/kukuLife/Documents/workspace-spring-tool-suite-4-4.5.1.RELEASE/jJobPlatForm/src/main/java/com/jobplatform/project/entity/Project.java
+/Users/kukuLife/Documents/workspace-spring-tool-suite-4-4.5.1.RELEASE/jJobPlatForm/src/main/java/com/jobplatform/task/controller/TaskController.java
+/Users/kukuLife/Documents/workspace-spring-tool-suite-4-4.5.1.RELEASE/jJobPlatForm/src/main/java/com/jobplatform/project/mapper/ProjectMapper.java
+/Users/kukuLife/Documents/workspace-spring-tool-suite-4-4.5.1.RELEASE/jJobPlatForm/src/main/java/com/jobplatform/project/service/ProjectService.java
+/Users/kukuLife/Documents/workspace-spring-tool-suite-4-4.5.1.RELEASE/jJobPlatForm/src/main/java/com/jobplatform/task/service/TaskProcessService.java
