@@ -1,0 +1,23 @@
+server:
+  port: 8080
+ 
+spring:
+  datasource:
+    username: root
+    password: 12345
+    url: jdbc:mysql://localhost:3306/GOOD_JOB?useUnicode=true&characterEncoding=utf-8&useSSL=true&serverTimezone=UTC
+ 
+mybatis:
+  mapper-locations: classpath:mapping/*Mapper.xml
+  type-aliases-package: com.jobplatform.*.entity
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl 
+
+
+
+#showSql
+#logging:
+#  level:
+#    com:
+#      example:
+#        mapper : debug

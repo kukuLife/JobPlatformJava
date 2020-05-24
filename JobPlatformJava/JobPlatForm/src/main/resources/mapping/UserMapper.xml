@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+        <!--The package name of your interface is com.abc.dao,The interface name is NameMapper.java，So your mapper.xml Of namespace Should be com.abc.dao.NameMapper-->
+<mapper namespace="com.jobplatform.user.mapper.UserMapper" >
+
+     <resultMap id="UserResultMap" type="com.jobplatform.user.entity.User">
+        <result column="USER_ID" jdbcType="VARCHAR" property="userId" />
+        <result column="USER_PASSWORD" jdbcType="VARCHAR" property="userPassword" />
+        <result column="USER_KEY_WORD" jdbcType="VARCHAR" property="userKeyWord" />
+        <result column="CREATE_DATETIME" jdbcType="DATE" property="createDateTime" />
+        <result column="UPDATE_DATETIME" jdbcType="DATE" property="updateDateTime" />
+    </resultMap>
+
+    <select id="select" parameterType="String" resultMap="UserResultMap">
+        SELECT USER_ID, USER_PASSWORD, USER_KEY_WORD, CREATE_DATETIME, UPDATE_DATETIME FROM USER WHERE USER_ID = #{userId}
+    </select>
+    
+    <insert id="insert" parameterType="String">
+        INSERT INTO USER(USER_ID, USER_PASSWORD, USER_KEY_WORD, CREATE_DATETIME, UPDATE_DATETIME) VALUES (#{userId}, #{passWord}, #{userKeyWord}, SYSDATE(), NULL)
+    </insert>
+</mapper>

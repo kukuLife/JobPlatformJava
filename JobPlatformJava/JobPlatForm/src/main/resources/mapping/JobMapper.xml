@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+        <!--The package name of your interface is com.abc.dao,The interface name is NameMapper.java，So your mapper.xml Of namespace Should be com.abc.dao.NameMapper-->
+<mapper namespace="com.jobplatform.job.mapper.JobMapper" >
+
+     <resultMap id="ProjectResultMap" type="com.jobplatform.job.entity.Job">
+        <result column="JOB_ID" jdbcType="VARCHAR" property="jobId" />
+        <result column="JOB_NAME" jdbcType="VARCHAR" property="jobName" />
+        <result column="JOB_INFO" jdbcType="VARCHAR" property="jobInfo" />
+        <result column="JOB_KEY_WORD" jdbcType="VARCHAR" property="jobKeyWord" />
+        <result column="START_DATE" jdbcType="DATE" property="startDate" />
+        <result column="END_DATE" jdbcType="DATE" property="endDate" />
+        <result column="CREATE_DATETIME" jdbcType="DATE" property="createDateTime" />
+        <result column="UPDATE_DATETIME" jdbcType="DATE" property="updateDateTime" />
+    </resultMap>
+
+    <select id="select" parameterType="String" resultMap="ProjectResultMap">
+        SELECT * FROM JOB
+       	<if test="jobKeyWord != null and jobKeyWord != ''">
+       		WHERE JOB_KEY_WORD = #{jobKeyWord}
+       	</if>
+    </select>
+
+</mapper>

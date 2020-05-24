@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+        <!--The package name of your interface is com.abc.dao,The interface name is NameMapper.java，So your mapper.xml Of namespace Should be com.abc.dao.NameMapper-->
+<mapper namespace="com.jobplatform.task.mapper.TaskMapper" >
+
+     <resultMap id="taskResultMap" type="com.jobplatform.task.entity.Task">
+        <result column="TASK_ID" jdbcType="VARCHAR" property="taskId" />
+        <result column="TASK_CONTENT" jdbcType="VARCHAR" property="taskContent" />
+        <result column="TASK_KEY_WORD" jdbcType="VARCHAR" property="taskKeyWord" />
+        <result column="TASK_ANSWER" jdbcType="VARCHAR" property="taskAnswer" />
+        <result column="CREATE_DATETIME" jdbcType="DATE" property="createDateTime" />
+        <result column="UPDATE_DATETIME" jdbcType="DATE" property="updateDateTime" />
+    </resultMap>
+
+    <select id="select" parameterType="String" resultMap="taskResultMap">
+        SELECT * FROM TASK 
+        <if test="taskKeyWord != null and taskKeyWord != ''">
+        	WHERE TASK_KEY_WORD=#{taskKeyWord}
+        </if>
+    </select>
+    
+    <update id="updateTaskAnswer">
+    	UPDATE TASK SET TASK_ANSWER = #{taskAnswer} WHERE TASK_ID = #{taskId}
+    </update>
+
+</mapper>
